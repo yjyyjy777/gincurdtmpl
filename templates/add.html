@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.title}}</title>
+</head>
+<body>
+<h1>{{.title}}</h1>
+<form action="/create" method="POST">
+    <label for="id">ID:</label><br>
+    <input type="number" id="id" name="id"><br>
+    <label for="first_name">First Name:</label><br>
+    <input type="text" id="first_name" name="first_name"><br>
+    <label for="last_name">Last Name:</label><br>
+    <input type="text" id="last_name" name="last_name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .title }}</title>
+</head>
+<body>
+<h1>{{ .title }}</h1>
+<form action="/update" method="POST">
+    <input type="hidden" name="id" value="{{ .person.ID }}">
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" value="{{ .person.FirstName }}"><br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" value="{{ .person.LastName }}"><br>
+    <label for="email">Email:</label>
+    <input type="text" name="email" value="{{ .person.Email }}"><br>
+    <input type="submit" value="Save">
+</form>
+<br>
+<a href="/">Back to List</a>
+</body>
+</html>
